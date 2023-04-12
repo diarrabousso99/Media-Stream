@@ -1,10 +1,6 @@
 import React from "react";
 import "./Header.css";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Body } from "./Body";
-// import "./Header_script";
 
 export function Header() {
   return (
@@ -52,7 +48,7 @@ export function Header() {
         <i class="fas fa-times" id="close"></i>
       </form>
 
-      <Body/>
+      {/* <Body/> */}
     </div>
     
   );
