@@ -1,33 +1,27 @@
 import React from "react";
-import "./Header.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import { 
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-} from 'react-router-dom';
-export function Header() {
-  return (
-    <div>
-      <header>
+import { Link } from "react-router-dom";
+
+export function Deconnexion () {
+    return(
+        <div>
+            <header>
         <Link to="/" class="logo">
           Media Stream
           {/* <img src="images/logo.jpg"></img> */}
         </Link>
 
         <nav class="navbar">
-          <Link class="active" to="/">
+          <Link to="/">
             <i className="fa fa-home"> </i>
-             home
+            home
           </Link>
-          <Link to="/addmedia">
+          <Link  to="/addmedia">
             {" "}
             <i className="fas fa-plus"></i>
             add media
           </Link>
 
-          <Link to="/profile">
+          <Link class="active " to="/profile">
             {" "}
             <i className="fas fa-user"></i> my profile
           </Link>
@@ -50,15 +44,15 @@ export function Header() {
           id="search-box"
         ></input>
         <label for="search-box" class="fas fa-search"></label>
-        
         <i class="fas fa-times" id="close"></i>
       </form>
-      
-
-      {/* <Body/> */}
-    </div>
-    
-  );
-  
+             <p>
+                je me deconnecte !
+            </p>
+        </div>
+    )
+   
 }
 
+
+export default Deconnexion

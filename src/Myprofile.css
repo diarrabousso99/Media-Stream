@@ -1,0 +1,61 @@
+.profil
+{
+
+    margin-top: 100px;
+    display: flex;
+    
+
+}
+
+.d1
+{
+    margin-left: 20px;
+    
+}
+#nom
+{
+    font-size: 20px;
+    
+}
+
+#sep
+{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.d3
+{
+    font-size: 13px;
+}
+
+.d2
+{
+    margin-top: 20px; margin-bottom: 10px; font-size: 25px;
+}
+
+#nav0
+{
+    margin-bottom: 0px; margin-left: 40px; font-size: 20px; margin-top: 10px;display: flex;
+}
+
+#nav1
+{
+    color:var(--black);
+    text-decoration: none;
+ 
+}
+
+.nav
+{
+    margin-left: 80px;
+    color:var(--black);
+    text-decoration: none;
+ 
+}
+
+img
+{
+    margin-left : 30px; border-radius: 50%; width: 100px; height: 100px; float: left;
+}
+
+

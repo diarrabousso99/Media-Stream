@@ -1,13 +1,10 @@
 import React from "react";
-import "./Header.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import { 
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-} from 'react-router-dom';
-export function Header() {
+import { Body } from "./Body";
+import ndeye_image from "./assets/OIP.jpg";
+import "./Myprofile.css";
+import { Link } from "react-router-dom";
+import { MyVideo } from "./MyVideo";
+export function Myprofile() {
   return (
     <div>
       <header>
@@ -17,17 +14,17 @@ export function Header() {
         </Link>
 
         <nav class="navbar">
-          <Link class="active" to="/">
+          <Link to="/">
             <i className="fa fa-home"> </i>
-             home
+            home
           </Link>
-          <Link to="/addmedia">
+          <Link  to="/addmedia">
             {" "}
             <i className="fas fa-plus"></i>
             add media
           </Link>
 
-          <Link to="/profile">
+          <Link class="active " to="/profile">
             {" "}
             <i className="fas fa-user"></i> my profile
           </Link>
@@ -50,15 +47,29 @@ export function Header() {
           id="search-box"
         ></input>
         <label for="search-box" class="fas fa-search"></label>
-        
         <i class="fas fa-times" id="close"></i>
       </form>
-      
-
-      {/* <Body/> */}
+      <div class="profil">
+        <img src={ndeye_image} alt="profil" />
+        <div class="d1">
+          <div class="d2">
+            <span id="nom">Lamine Diaw</span>
+          </div>
+          <span class="d3">11,5K abonnées</span>
+        </div>
+      </div>
+      <br />
+      {/* <nav id="nav0">
+                <Link id="nav1" to="../profile">Acceuil</Link>
+                <Link class="nav" to="../profile">Mes video</Link>
+                <Link class="nav" to="../profile">Privées</Link>
+                <Link class="nav" to="../profile">PlayList</Link>
+            </nav> */}
+      {/* <hr id="sep" /> */}
+      {/* <Body />   */}
+      <MyVideo />
     </div>
-    
   );
-  
 }
 
+export default Myprofile;

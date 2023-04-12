@@ -1,13 +1,13 @@
 import React from "react";
 import "./Header.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Connexion } from "./Connexion";
 import { 
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-} from 'react-router-dom';
-export function Header() {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+  } from 'react-router-dom';
+export function AddMedia() {
   return (
     <div>
       <header>
@@ -17,11 +17,11 @@ export function Header() {
         </Link>
 
         <nav class="navbar">
-          <Link class="active" to="/">
+          <Link to="/">
             <i className="fa fa-home"> </i>
-             home
+            home
           </Link>
-          <Link to="/addmedia">
+          <Link class="active " to="/addmedia">
             {" "}
             <i className="fas fa-plus"></i>
             add media
@@ -50,15 +50,11 @@ export function Header() {
           id="search-box"
         ></input>
         <label for="search-box" class="fas fa-search"></label>
-        
         <i class="fas fa-times" id="close"></i>
       </form>
-      
-
-      {/* <Body/> */}
+      <Connexion />
     </div>
-    
   );
-  
 }
 
+export default AddMedia;

@@ -1,0 +1,84 @@
+
+.containere{
+	
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+	/* color: black; */
+	background: red;
+	/* background-image: './assets/streaming.jpp'; */
+
+}
+.login_box{
+	
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.login_box h1{
+	border-bottom: 6px solid #192a56;
+	float: left;
+	font-size: 40px;
+	margin-bottom: 50px;
+	padding: 13px 0;
+	color:black;
+}
+.text_box{
+	width: 100%;
+	margin: 8px 0;
+	padding: 8px 0;
+	font-size: 20px;
+	overflow: hidden;	
+	color: black;
+
+}
+input{
+
+outline: none;
+background: none;
+color: black;
+float: left;
+margin: 0 10px;
+width: 80%;
+height: 40px;
+border-radius: 10px;
+border: 1px solid grey;
+}
+
+input:hover{
+	
+	border-radius: 10px;
+}
+
+.btne{
+	border: 2px solid #FFAD05;
+	width: 150px;
+	background: none;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+   background-color: #FFAD05;
+
+}
+.btne_2{
+	border: 2px solid #192a56;
+	width: 150px;
+	background: none;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+   background-color: #192a56;
+
+}
+
+.no_compte{
+   margin-left: 100px;
+    color:#192a56;
+}
